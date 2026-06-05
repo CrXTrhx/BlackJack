@@ -91,7 +91,7 @@ btnPedir.addEventListener("click", () => {
   const imgCarta = document.createElement("img");
   imgCarta.src = `assets/cartas/${carta}.png`;
   imgCarta.classList.add("carta");
-  cartasPlayer.append(imgCarta);
+  cartasPlayer.appendChild(imgCarta);
 
   if (puntosPlayer > 21) {
     btnPedir.disabled = true;
